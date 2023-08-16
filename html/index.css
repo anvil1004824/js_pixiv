@@ -27,7 +27,7 @@ main {
   width: 200px;
   background-color: black;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 img {
   width: 100%;
