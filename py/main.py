@@ -67,8 +67,9 @@ def illust_filter(res):
     artist_id = if_exist(res["user"]["id"])
     date = if_exist(res["create_date"])
     desc = if_exist(res["caption"])
+    thumbnail = if_exist(res["image_urls"]["square_medium"])
     tags = []
-    urls = []
+    urls = [thumbnail]
     is_deleted = False
     for tag in res["tags"]:
         if tag:
